@@ -1,11 +1,13 @@
 import React from 'react'
-import Menu from './components/Menu'
+import DefaultPage from './Pages/DefaultPage'
+import HomePage from './Pages/HomePage'
+
 
 function App(){
     return(
-        <div>
-            <Menu />
-        </div>
+        <>
+            <DefaultPage children={ <HomePage />} />
+        </>
     )
 }
 

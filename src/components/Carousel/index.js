@@ -1,6 +1,6 @@
 import React from 'react';
 import { VideoCardGroupContainer, VideoCardList, Title, ExtraLink } from './styles';
-import VideoCard from './components/VideoCard';
+import VideoCard from './VideoCard';
 
 function VideoCardGroup({
   ignoreFirstVideo,
