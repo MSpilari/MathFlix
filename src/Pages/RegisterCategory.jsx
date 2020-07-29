@@ -1,10 +1,11 @@
 import React from 'react'
 import DefaultPage from '../Pages/DefaultPage'
+import FormCategory from '../components/Form/FormCategory'
 
 const RegisterCategory = () => {
     return(
         <DefaultPage>
-            <h1>Formulário de Registro de Categoria</h1>
+            <FormCategory />
         </DefaultPage>
     )
 }
