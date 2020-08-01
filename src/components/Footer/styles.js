@@ -14,3 +14,8 @@ export const FooterBase = styled.footer`
     margin-bottom: 50px;
   }
 `;
+
+export const MyLogo = styled.img`
+  width:200px;
+  height:100px;
+`

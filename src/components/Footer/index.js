@@ -1,11 +1,13 @@
 import React from 'react';
-import { FooterBase } from './styles';
+import { FooterBase, MyLogo } from './styles';
+import Logo from '../../assets/Logo.svg'
+
 
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+      <a target='_blank' rel=' noopener noreferrer' href="https://www.google.com">
+        <MyLogo src={Logo} alt="MSpilari Logo" />
       </a>
       <p>
         Orgulhosamente criado durante a
