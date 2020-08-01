@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {FormWrapper, ButtonWrapper, SaveButton, ClearButton} from './styles'
+import {FormWrapper, ButtonWrapper, Button } from './styles'
 
 
 const DefaultForm = ({ title, children }) => {
@@ -9,8 +9,8 @@ const DefaultForm = ({ title, children }) => {
             <h1>{title}</h1>
             { children }
             <ButtonWrapper>
-                <SaveButton>Salvar</SaveButton>
-                <ClearButton>Limpar</ClearButton>
+                <Button Save>Salvar</Button>
+                <Button>Limpar</Button>
             </ButtonWrapper>
         </FormWrapper>
     )
