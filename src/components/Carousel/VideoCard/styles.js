@@ -20,6 +20,7 @@ export const VideoCardContainer = styled.a`
   padding: 16px;
 
   transition: opacity .3s;
+  
   &:hover,
   &:focus {
     opacity: .5;
@@ -28,4 +29,22 @@ export const VideoCardContainer = styled.a`
   &:not(:first-child) {
     margin-left: 20px;
   }
+  
+
+  &:after{
+    display:none;
+    content: '${({ title })  => `${title}` }';
+    border-radius:8px;
+    font-size:35px;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.9);
+    transition: display 0.5s;
+  }
+
+  &:hover:after{
+    display:block;
+  }
+
+   
 `;
+

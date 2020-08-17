@@ -12,7 +12,7 @@ const HomePage = () => {
         <BannerMain
           videoTitle={Data.categorias[0].videos[0].titulo}
           url={Data.categorias[0].videos[0].url}
-          videoDescription={"O que é Front-end"}
+          videoDescription={''}
         />
 
         <Carousel ignoreFirstVideo category={Data.categorias[0]} />

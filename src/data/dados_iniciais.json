@@ -95,7 +95,7 @@
         },
         {
           "titulo": "Futurama",
-          "url": "https://www.youtube.com/watch?v=foiT78rTfkc"
+          "url": "https://www.youtube.com/watch?v=6F1QNfmiqHc"
         }, 
         {
           "titulo": "American Dad",
@@ -134,20 +134,28 @@
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "Laranja Mecânica",
+          "url": "https://www.youtube.com/watch?v=gTP_qxPLhBE"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Kill Bill",
+          "url": "https://www.youtube.com/watch?v=Upwg6JMtyCg"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Django",
+          "url": "https://www.youtube.com/watch?v=mmfu7HB_TX8"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Batman - O cavaleiro das trevas.",
+          "url": "https://www.youtube.com/watch?v=1T__uN5xmC0"
+        },
+        {
+          "titulo": "Coringa",
+          "url": "https://www.youtube.com/watch?v=jfVTJm9NilA"
+        },
+        {
+          "titulo": "Matrix",
+          "url": "https://www.youtube.com/watch?v=3WfR87K5zW8"
         }
       ]
     },
