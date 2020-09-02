@@ -33,6 +33,31 @@ export const InputStyled = styled.input `
     font-size:10px;
   }
 `
+export const SelectStyled = styled.select `
+  width:100%;
+  height:100%;
+  border:none;
+  color:var(--white);
+  border-bottom:2px solid rgba(0, 0, 0, 0.1);
+  font-size:17px;
+  outline:none;
+  background-color: rgba(0, 0, 0, 0.1);
+  
+  &:focus,
+  &:valid{
+    border-bottom:2px solid var(--primary)
+  }
+  
+  &:focus ~ label,
+  &:valid ~ label{
+    transform: translateY(-20px);
+    font-size:10px;
+  }
+`
+export const OptionStyled = styled.option `
+  background-color:black;
+`
+
 export const TextAreaStyled = styled.textarea `
   width:100%;
   height:100%;

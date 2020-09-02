@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+
 import DefaultForm from '../DefaultForm'
-import { AllWrapper, InputStyled, LabelStyled, TextAreaStyled } from '../inputstyles'
+import { 
+    AllWrapper, 
+    InputStyled, 
+    LabelStyled, 
+    TextAreaStyled 
+  } from '../inputstyles'
 
 const FormRegister = () => {
   const [FormCategory, setFormCategory] = useState(() => {
@@ -9,10 +15,15 @@ const FormRegister = () => {
       Description: '',
       Color: ''
     }
-
   })
+ 
+
   return (
-      <DefaultForm title={`Nova Categoria: ${FormCategory.Category}`}>
+      <DefaultForm 
+        urlApi={'categories'} 
+        title={`Nova Categoria: ${FormCategory.Category}`}
+        dataSend={FormCategory}
+      >
         <AllWrapper>
           <InputStyled 
             type="text" 
