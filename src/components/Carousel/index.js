@@ -3,14 +3,13 @@ import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './VideoCard';
 import Slider, { SliderItem } from './Slider';
 
-function Carousel({
-  ignoreFirstVideo,
-  category,
-}) {
-  const categoryTitle = category.titulo;
-  const categoryColor = category.cor;
-  const categoryExtraLink = category.link_extra;
-  const videos = category.videos;
+function Carousel({ category }) {
+  
+  const categoryTitle = category.categoryName;
+  const categoryColor = category.categoryColor;
+  const categoryExtraLink = 'https://github.com/MSpilari';
+  const categoryDescription = category.categoryDescription;
+  const videos = category.categoryVideos;
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -19,23 +18,19 @@ function Carousel({
             {categoryTitle}
           </Title>
           {categoryExtraLink && 
-            <ExtraLink href={categoryExtraLink.url} target="_blank">
-              {categoryExtraLink.text}  
+            <ExtraLink href={categoryExtraLink} target="_blank">
+              {categoryDescription}  
             </ExtraLink>
           }
-        </>
+        </> 
       )}
       <Slider>
         {videos.map((video, index) => {
-          if (ignoreFirstVideo && index === 0) {
-            return null;
-          }
-
           return (
-            <SliderItem key={video.titulo}>
+            <SliderItem key={index}>
               <VideoCard
-                videoTitle={video.titulo}
-                videoURL={video.url}
+                videoTitle={video.videoName}
+                videoURL={video.videoLink}
                 categoryColor={categoryColor}
               />
             </SliderItem>

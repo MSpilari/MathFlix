@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3333'
+const baseURL = document.location.hostname === 'localhost' ? 'http://localhost:3333' : 'https://apimathflix.herokuapp.com/'
 
 
 const api = axios.create({

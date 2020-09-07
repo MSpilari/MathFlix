@@ -1,31 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import DefaultPage from "../Pages/DefaultPage";
+import LoadingPage from '../Pages/Loading'
 import BannerMain from "../components/BannerMain";
 import Carousel from "../components/Carousel";
-import Data from "../data/dados_iniciais.json";
+import api from '../services/api';
 
 const HomePage = () => {
+  
+  const [ apiData, setApiData ] = useState(() => [])
+
+  useEffect(() => {
+    api.get('mixed')
+      .then(response => { setApiData(response.data) })
+  }, [])
+  
   return (
+    apiData.length === 0 ? <LoadingPage /> : 
     <DefaultPage>
       <div>
         <BannerMain
-          videoTitle={Data.categorias[0].videos[0].titulo}
-          url={Data.categorias[0].videos[0].url}
-          videoDescription={''}
-        />
-
-        <Carousel ignoreFirstVideo category={Data.categorias[0]} />
-
-        <Carousel category={Data.categorias[1]} />
-
-        <Carousel category={Data.categorias[2]} />
-
-        <Carousel category={Data.categorias[3]} />
-
-        <Carousel category={Data.categorias[4]} />
-
-        <Carousel category={Data.categorias[5]} />
+          videoTitle={apiData[5].categoryVideos[4].videoName}
+          url={apiData[5].categoryVideos[4].videoLink}
+          videoDescription={apiData[5].categoryVideos[4].videoDescription}
+        />               
+        
+        {apiData.map(category => {
+          return <Carousel key={category.id} category={category} /> 
+        })} 
       </div>
     </DefaultPage>
   );
