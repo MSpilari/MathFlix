@@ -1,11 +1,12 @@
 import React from 'react'
 
 import DefaultPage from './DefaultPage'
+import Loading from '../components/Loading'
 
 const LoadingPage = () => {
     return (
         <DefaultPage>
-            <div>Wait a second !!! We are Loading the Fun !</div>
+            <Loading />
         </DefaultPage>
     )
 }
