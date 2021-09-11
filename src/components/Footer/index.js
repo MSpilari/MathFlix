@@ -6,16 +6,9 @@ import Logo from '../../assets/Logo.svg'
 function Footer() {
   return (
     <FooterBase>
-      <a target='_blank' rel=' noopener noreferrer' href="https://www.google.com">
+      <a target='_blank' rel=' noopener noreferrer' href="https://mspilariportfolio.vercel.app/">
         <MyLogo src={Logo} alt="MSpilari Logo" />
       </a>
-      <p>
-        Orgulhosamente criado durante a
-        {' '}
-        <a href="https://www.alura.com.br/">
-          Imersão React da Alura
-        </a>
-      </p>
     </FooterBase>
   );
 }
