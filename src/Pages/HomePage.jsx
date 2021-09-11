@@ -20,9 +20,9 @@ const HomePage = () => {
     <DefaultPage>
       <div>
         <BannerMain
-          videoTitle={apiData[5].categoryVideos[4].videoName}
-          url={apiData[5].categoryVideos[4].videoLink}
-          videoDescription={apiData[5].categoryVideos[4].videoDescription}
+          videoTitle={apiData[0].categoryVideos[4].videoName}
+          url={apiData[0].categoryVideos[4].videoLink}
+          videoDescription={apiData[0].categoryVideos[4].videoDescription}
         />               
         
         {apiData.map(category => {
